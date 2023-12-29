@@ -1,0 +1,13 @@
+$primary-color: #bd5d39;
+$secondary-color: #f2f2f2;
+$tertiary-color: #1a1a1a;
+$quaternary-color: #343a40;
+
+.navbar {
+  background-color: $primary-color;
+  color: $secondary-color;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border: $primary-color; //by default, border is white with 1px width in chakra so we need to change it to primary color
+}

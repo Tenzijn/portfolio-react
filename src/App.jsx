@@ -1,6 +1,13 @@
-import './styles/App.css';
-import NavbarMobile from './components/NavbarMobile';
+/* React Router */
 import { Routes, Route } from 'react-router-dom';
+/* Chakra UI */
+import { Container, Grid, GridItem, Hide } from '@chakra-ui/react';
+/* Styles */
+import './styles/App.css';
+/* Components */
+import NavbarMobile from './components/NavbarMobile';
+import SidebarNav from './components/SidebarNav';
+/* Pages */
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Education from './pages/Education';
@@ -12,27 +19,45 @@ import PageNotFound from './pages/PageNotFound';
 const navLinks = [
   //don't change the order of these links as it will affect the order of the navbar
   'About',
-  'Projects',
-  'Education',
-  'Interest',
   'Journey',
+  'Education',
   'Skills',
+  'Interest',
+  'Projects',
 ];
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path='/' element={<About />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/education' element={<Education />} />
-        <Route path='/interest' element={<Interest />} />
-        <Route path='/journey' element={<Journey />} />
-        <Route path='/skills' element={<Skills />} />
-        <Route path='*' element={<PageNotFound />} />
-      </Routes>
-      <NavbarMobile userName='Tenzin Kunchok' navLinks={navLinks} />
+      <Grid templateColumns={'repeat(6,1fr)'} h='100dvh'>
+        <GridItem colSpan={6}>
+          <NavbarMobile userName='Tenzin Kunchok' navLinks={navLinks} />
+        </GridItem>
+        <Hide below='lg'>
+          <GridItem
+            colSpan={1}
+            h={'100dvh'}
+            className='sidebarNav'
+            maxWidth={'280px'}
+          >
+            <SidebarNav navLinks={navLinks} />
+          </GridItem>
+        </Hide>
+        <GridItem colSpan={5} h={'100dvh'} pt='65px'>
+          <Container maxW='container.xl'>
+            <Routes>
+              <Route path='/' element={<About />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/projects' element={<Projects />} />
+              <Route path='/education' element={<Education />} />
+              <Route path='/interest' element={<Interest />} />
+              <Route path='/journey' element={<Journey />} />
+              <Route path='/skills' element={<Skills />} />
+              <Route path='*' element={<PageNotFound />} />
+            </Routes>
+          </Container>
+        </GridItem>
+      </Grid>
     </>
   );
 }

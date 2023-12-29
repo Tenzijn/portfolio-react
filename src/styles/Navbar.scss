@@ -1,7 +1,4 @@
-$primary-color: #bd5d39;
-$secondary-color: #f2f2f2;
-$tertiary-color: #1a1a1a;
-$quaternary-color: #343a40;
+@import './variables.scss';
 
 .navbar {
   background-color: $primary-color;
@@ -14,9 +11,10 @@ $quaternary-color: #343a40;
 }
 
 .nav-link {
+  font-family: 'cabinet grotesk', sans-serif;
+  font-weight: 700;
   opacity: 0.6;
   color: $secondary-color;
-  font-weight: bolder;
   font-size: large;
   &:hover {
     opacity: 0.8;

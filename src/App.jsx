@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 /* Chakra UI */
 import { Container, Grid, GridItem, Hide } from '@chakra-ui/react';
 /* Styles */
-import './styles/App.css';
+import './styles/App.scss';
 /* Components */
 import NavbarMobile from './components/NavbarMobile';
 import SidebarNav from './components/SidebarNav';
@@ -15,6 +15,9 @@ import Interest from './pages/Interest';
 import Journey from './pages/Journey';
 import Skills from './pages/Skills';
 import PageNotFound from './pages/PageNotFound';
+
+/* Images */
+import profilePic from '/me.webp';
 
 const navLinks = [
   //don't change the order of these links as it will affect the order of the navbar
@@ -38,9 +41,9 @@ function App() {
             colSpan={1}
             h={'100dvh'}
             className='sidebarNav'
-            maxWidth={'280px'}
+            maxWidth={'200px'}
           >
-            <SidebarNav navLinks={navLinks} />
+            <SidebarNav navLinks={navLinks} profilePic={profilePic} />
           </GridItem>
         </Hide>
         <GridItem colSpan={5} h={'100dvh'} pt='65px'>

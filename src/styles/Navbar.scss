@@ -11,3 +11,7 @@ $quaternary-color: #343a40;
   top: 0;
   border: $primary-color; //by default, border is white with 1px width in chakra so we need to change it to primary color
 }
+
+.active {
+  opacity: 0.5;
+}

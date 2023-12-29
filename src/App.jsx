@@ -19,6 +19,16 @@ import PageNotFound from './pages/PageNotFound';
 /* Images */
 import profilePic from '/me.webp';
 
+/* Data */
+import {
+  aboutMe,
+  myJourney,
+  projects,
+  education,
+  experience,
+  hobbies,
+} from './data/data.js';
+
 const navLinks = [
   //don't change the order of these links as it will affect the order of the navbar
   'About',
@@ -50,12 +60,27 @@ function App() {
           <Flex h='100%' alignItems='center' mx={10}>
             <Routes>
               <Route path='/' element={<About />} />
-              <Route path='/about' element={<About />} />
-              <Route path='/projects' element={<Projects />} />
-              <Route path='/education' element={<Education />} />
-              <Route path='/interest' element={<Interest />} />
-              <Route path='/journey' element={<Journey />} />
-              <Route path='/skills' element={<Skills />} />
+              <Route path='/about' element={<About aboutMe={aboutMe} />} />
+              <Route
+                path='/projects'
+                element={<Projects projects={projects} />}
+              />
+              <Route
+                path='/education'
+                element={<Education education={education} />}
+              />
+              <Route
+                path='/interest'
+                element={<Interest hobbies={hobbies} />}
+              />
+              <Route
+                path='/journey'
+                element={<Journey myJourney={myJourney} />}
+              />
+              <Route
+                path='/skills'
+                element={<Skills experience={experience} />}
+              />
               <Route path='*' element={<PageNotFound />} />
             </Routes>
           </Flex>

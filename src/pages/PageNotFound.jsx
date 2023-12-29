@@ -6,7 +6,6 @@ const PageNotFound = () => {
   const navigate = useNavigate();
   useEffect(() => {
     setTimeout(() => {
-      console.log('Redirecting to About page...');
       navigate('/About');
     }, 3000);
   }, []);

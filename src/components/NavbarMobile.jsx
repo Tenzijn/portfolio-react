@@ -12,6 +12,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons';
 import '../styles/Navbar.scss';
 import ReactPropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
 const NavbarMobile = (props) => {
   const { userName, navLinks } = props;
@@ -44,9 +45,13 @@ const NavbarMobile = (props) => {
           <AccordionPanel>
             <Flex flexDirection={'column'} gap={2}>
               {navLinks.map((link) => (
-                <Text key={link} fontSize='lg' color='white'>
+                <NavLink
+                  key={link}
+                  to={`/${link.toLowerCase()}`}
+                  className='nav-link'
+                >
                   {link}
-                </Text>
+                </NavLink>
               ))}
             </Flex>
           </AccordionPanel>

@@ -10,7 +10,7 @@ import Skills from './pages/Skills';
 import { useEffect, useState } from 'react';
 
 const navLinks = [
-  'About',
+  'About', //don't change the order of these links
   'Projects',
   'Education',
   'Interest',
@@ -23,7 +23,7 @@ function App() {
     <>
       <NavbarMobile userName='Tenzin Kunchok' navLinks={navLinks} />
       <Routes>
-        <Route path='/About' element={<About />} />
+        <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/education' element={<Education />} />
         <Route path='/interest' element={<Interest />} />

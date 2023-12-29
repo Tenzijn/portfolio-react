@@ -45,13 +45,10 @@ const NavbarMobile = (props) => {
           <AccordionPanel>
             <Flex flexDirection={'column'} gap={2}>
               {navLinks.map((link) => (
-                // <Text key={link} fontSize='lg' color='white'>
-                //   {link}
-                // </Text>
                 <NavLink
                   key={link}
                   to={`/${link.toLowerCase()}`}
-                  className='navlink'
+                  className='nav-link'
                 >
                   {link}
                 </NavLink>

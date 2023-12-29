@@ -12,6 +12,16 @@ $quaternary-color: #343a40;
   border: $primary-color; //by default, border is white with 1px width in chakra so we need to change it to primary color
 }
 
+.nav-link {
+  opacity: 0.6;
+  color: $secondary-color;
+  font-weight: bolder;
+  font-size: large;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .active {
-  opacity: 0.5;
+  opacity: 1;
 }

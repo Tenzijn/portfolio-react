@@ -1,7 +1,7 @@
 /* React Router */
 import { Routes, Route } from 'react-router-dom';
 /* Chakra UI */
-import { Container, Grid, GridItem, Hide } from '@chakra-ui/react';
+import { Flex, Grid, GridItem, Hide } from '@chakra-ui/react';
 /* Styles */
 import './styles/App.scss';
 /* Components */
@@ -32,22 +32,22 @@ const navLinks = [
 function App() {
   return (
     <>
-      <Grid templateColumns={'repeat(6,1fr)'} h='100dvh'>
-        <GridItem colSpan={6}>
+      <Grid templateColumns={'repeat(12,1fr)'} h='100dvh'>
+        <GridItem colSpan={12}>
           <NavbarMobile userName='Tenzin Kunchok' navLinks={navLinks} />
         </GridItem>
         <Hide below='lg'>
           <GridItem
-            colSpan={1}
+            colSpan={2}
             h={'100dvh'}
             className='sidebarNav'
-            maxWidth={'200px'}
+            maxWidth={'270px'}
           >
             <SidebarNav navLinks={navLinks} profilePic={profilePic} />
           </GridItem>
         </Hide>
-        <GridItem colSpan={5} h={'100dvh'} pt='65px'>
-          <Container maxW='container.xl'>
+        <GridItem colSpan={10} h={'100dvh'}>
+          <Flex h='100%' alignItems='center' mx={10}>
             <Routes>
               <Route path='/' element={<About />} />
               <Route path='/about' element={<About />} />
@@ -58,7 +58,7 @@ function App() {
               <Route path='/skills' element={<Skills />} />
               <Route path='*' element={<PageNotFound />} />
             </Routes>
-          </Container>
+          </Flex>
         </GridItem>
       </Grid>
     </>

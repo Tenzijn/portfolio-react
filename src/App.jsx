@@ -10,7 +10,8 @@ import Skills from './pages/Skills';
 import PageNotFound from './pages/PageNotFound';
 
 const navLinks = [
-  'About', //don't change the order of these links
+  //don't change the order of these links as it will affect the order of the navbar
+  'About',
   'Projects',
   'Education',
   'Interest',
@@ -21,8 +22,8 @@ const navLinks = [
 function App() {
   return (
     <>
-      <NavbarMobile userName='Tenzin Kunchok' navLinks={navLinks} />
       <Routes>
+        <Route path='/' element={<About />} />
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/education' element={<Education />} />
@@ -31,6 +32,7 @@ function App() {
         <Route path='/skills' element={<Skills />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
+      <NavbarMobile userName='Tenzin Kunchok' navLinks={navLinks} />
     </>
   );
 }

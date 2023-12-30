@@ -61,7 +61,12 @@ function App() {
         </GridItem>
       </Hide>
       <GridItem colSpan={{ base: 12, lg: 10 }}>
-        <Flex alignItems='center' m={6} h={{ lg: '100dvh' }}>
+        <Flex
+          alignItems='center'
+          mx={6}
+          my={{ base: 6, lg: 0 }}
+          h={{ lg: '100svh' }}
+        >
           {/*
            * React Router for Navigation with all the pages
            */}

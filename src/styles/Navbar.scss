@@ -1,22 +1,20 @@
-$primary-color: #bd5d39;
-$secondary-color: #f2f2f2;
-$tertiary-color: #1a1a1a;
-$quaternary-color: #343a40;
+@import './index.scss';
 
 .navbar {
   background-color: $primary-color;
   color: $secondary-color;
-  position: fixed;
+  // position: fixed;
   z-index: 100;
   width: 100%;
-  top: 0;
+  // top: 0;
   border: $primary-color; //by default, border is white with 1px width in chakra so we need to change it to primary color
 }
 
 .nav-link {
+  font-family: 'cabinet grotesk', sans-serif;
+  font-weight: 700;
   opacity: 0.6;
   color: $secondary-color;
-  font-weight: bolder;
   font-size: large;
   &:hover {
     opacity: 0.8;

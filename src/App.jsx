@@ -1,9 +1,9 @@
 /* React Router */
 import { Routes, Route } from 'react-router-dom';
 /* Chakra UI */
-import { Container, Grid, GridItem, Hide } from '@chakra-ui/react';
+import { Flex, Grid, GridItem, Hide } from '@chakra-ui/react';
 /* Styles */
-import './styles/App.css';
+import './styles/App.scss';
 /* Components */
 import NavbarMobile from './components/NavbarMobile';
 import SidebarNav from './components/SidebarNav';
@@ -14,7 +14,21 @@ import Education from './pages/Education';
 import Interest from './pages/Interest';
 import Journey from './pages/Journey';
 import Skills from './pages/Skills';
+import Home from './pages/Home.jsx';
 import PageNotFound from './pages/PageNotFound';
+
+/* Images */
+import profilePic from '/tenzinkunchok.webp';
+
+/* Data */
+import {
+  aboutMe,
+  myJourney,
+  projects,
+  education,
+  experience,
+  hobbies,
+} from './data/data.js';
 
 const navLinks = [
   //don't change the order of these links as it will affect the order of the navbar
@@ -28,37 +42,54 @@ const navLinks = [
 
 function App() {
   return (
-    <>
-      <Grid templateColumns={'repeat(6,1fr)'} h='100dvh'>
-        <GridItem colSpan={6}>
-          <NavbarMobile userName='Tenzin Kunchok' navLinks={navLinks} />
+    <Grid templateColumns={'repeat(12,1fr)'}>
+      <GridItem colSpan={12}>
+        <NavbarMobile
+          userName='Tenzin Kunchok'
+          navLinks={navLinks}
+          userImg={profilePic}
+        />
+      </GridItem>
+      <Hide below='lg'>
+        <GridItem
+          colSpan={2}
+          h={'100dvh'}
+          className='sidebarNav'
+          maxWidth={'270px'}
+        >
+          <SidebarNav navLinks={navLinks} profilePic={profilePic} />
         </GridItem>
-        <Hide below='lg'>
-          <GridItem
-            colSpan={1}
-            h={'100dvh'}
-            className='sidebarNav'
-            maxWidth={'280px'}
-          >
-            <SidebarNav navLinks={navLinks} />
-          </GridItem>
-        </Hide>
-        <GridItem colSpan={5} h={'100dvh'} pt='65px'>
-          <Container maxW='container.xl'>
-            <Routes>
-              <Route path='/' element={<About />} />
-              <Route path='/about' element={<About />} />
-              <Route path='/projects' element={<Projects />} />
-              <Route path='/education' element={<Education />} />
-              <Route path='/interest' element={<Interest />} />
-              <Route path='/journey' element={<Journey />} />
-              <Route path='/skills' element={<Skills />} />
-              <Route path='*' element={<PageNotFound />} />
-            </Routes>
-          </Container>
-        </GridItem>
-      </Grid>
-    </>
+      </Hide>
+      <GridItem colSpan={{ base: 12, lg: 10 }}>
+        <Flex alignItems='center' m={6} h={{ lg: '100dvh' }}>
+          {/*
+           * React Router for Navigation with all the pages
+           */}
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About aboutMe={aboutMe} />} />
+            <Route
+              path='/projects'
+              element={<Projects projects={projects} />}
+            />
+            <Route
+              path='/education'
+              element={<Education education={education} />}
+            />
+            <Route path='/interest' element={<Interest hobbies={hobbies} />} />
+            <Route
+              path='/journey'
+              element={<Journey myJourney={myJourney} />}
+            />
+            <Route
+              path='/skills'
+              element={<Skills experience={experience} />}
+            />
+            <Route path='*' element={<PageNotFound />} />
+          </Routes>
+        </Flex>
+      </GridItem>
+    </Grid>
   );
 }
 

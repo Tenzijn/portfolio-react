@@ -68,7 +68,7 @@ function App() {
           h={{ lg: '100svh' }}
         >
           {/*
-           * React Router for Navigation with all the pages
+           * Navigation to all the pages
            */}
           <Routes>
             <Route path='/' element={<Home />} />

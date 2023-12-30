@@ -7,6 +7,7 @@ import {
   FaYoutube,
 } from 'react-icons/fa';
 import { Icon, Wrap, WrapItem } from '@chakra-ui/react';
+import propTypes from 'prop-types';
 
 const IconGenerator = ({ icons }) => {
   return (
@@ -23,7 +24,7 @@ const IconGenerator = ({ icons }) => {
               p={4}
               borderRadius={18}
               onClick={() => {
-                // to open the link in new tab
+                // to open the link in new tab with link
                 window.open(social[Object.keys(social)[0]]);
               }}
               cursor={'pointer'}
@@ -55,6 +56,10 @@ const getIconComponent = (iconName) => {
     default:
       return null;
   }
+};
+
+IconGenerator.propTypes = {
+  icons: propTypes.array,
 };
 
 export default IconGenerator;

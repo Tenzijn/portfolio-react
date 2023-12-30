@@ -18,7 +18,7 @@ const About = ({ aboutMe }) => {
               </Text>
             </Heading>
             <Heading fontSize={{ lg: 'xl' }} mt='2'>
-              {info.add.toUpperCase()} {info.phone} - &nbsp;
+              {info.add.toUpperCase()} {info.phone} &nbsp;
               <Text as='span' className='accent-orange'>
                 {info.email.toUpperCase()}
               </Text>

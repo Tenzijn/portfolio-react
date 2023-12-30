@@ -13,13 +13,13 @@ export const aboutMe = [
     phone: '+31 6 38947645',
     socials: [
       {
-        Linkedin: 'https://www.linkedin.com/in/tenzinkunchok/',
+        Linkedin: 'https://www.linkedin.com/in/tenzin-kunchok-669592240/',
       },
-      { Github: '' },
-      { Twitter: '' },
-      { Instagram: '' },
-      { Facebook: '' },
-      { Youtube: '' },
+      { Github: 'https://github.com/Tenzijn' },
+      { Twitter: 'https://twitter.com/Tenzin7623' },
+      { Instagram: 'https://www.instagram.com/tenzijn/' },
+      { Facebook: 'https://www.facebook.com/profile.php?id=100080902160722' },
+      { Youtube: 'https://www.youtube.com/channel/UCSZ7cHHK8yiIX5uJP_qHeug' },
     ],
     about: `👋 I'm a self-taught full-stack developer 💻 driven by a relentless curiosity for technology 🕸️. I thrive on the dynamic nature of the tech world 🌏, constantly learning and adapting to stay at the forefront of innovation. Fluent in four languages 🏳️ (Tibetan) 🇳🇱 🇬🇧 🇮🇳 , I believe effective communication is as crucial as writing impeccable code . My journey began in Tibet, where I developed a deep appreciation for cultural diversity, and now, I call Amsterdam home. 
     Beyond coding, my passion extends to graphic design 🤔, photography 📸 , and videography 🎥. I find joy in crafting visual narratives that complement my technical skills. Exploring new programming languages is not just a professional endeavor but also a creative outlet. This unique blend of technical acumen and a multicultural background, coupled with a keen interest in the visual arts, allows me to approach challenges with a holistic and creative perspective.`,
@@ -259,40 +259,101 @@ export const education = [
 export const experience = [
   {
     languagesAndTools: [
-      'HTML5',
-      'CSS3',
-      'SASS',
-      'JavaScript',
-      'React',
-      'Node.js',
-      'MySQL',
-      'WordPress',
-      'C++',
-      'C',
+      {
+        html5: 'html5',
+      },
+      {
+        css3: 'css3-alt',
+      },
+      {
+        sass: 'sass',
+      },
+      {
+        javaScript: 'js-square',
+      },
+      {
+        react: 'react',
+      },
+      {
+        node: 'node-js',
+      },
+      {
+        mysql: 'database',
+      },
+      {
+        wordpress: 'wordpress',
+      },
+      {
+        cPlusPlus: 'c-plusplus',
+      },
+      {
+        c: 'c',
+      },
     ],
     tools: [
-      'Git',
-      'GitHub',
-      'VS Code',
-      'CodePen',
-      'Netlify',
-      'Figma',
-      'Adobe Photoshop',
-      'Adobe Illustrator',
-      'Adobe Lightroom',
-      'Microsoft Office',
-      'Google Suite',
-      'Bootstrap',
-      'Material UI',
-      'Tailwind CSS',
-      'Firebase',
-      'Vite',
-      'Webpack',
-      'Chakra UI',
+      {
+        github: 'github',
+      },
+      {
+        git: 'git',
+      },
+      {
+        figma: 'figma',
+      },
+      {
+        adobe: 'adobe',
+      },
+      {
+        bootstrap: 'bootstrap',
+      },
+      {
+        material: 'material-ui',
+      },
+      {
+        firebase: 'firebase',
+      },
+      {
+        vite: 'vite',
+      },
+      {
+        webpack: 'webpack',
+      },
+      {
+        chakra: 'chakra-ui',
+      },
+      {
+        netlify: 'netlify',
+      },
     ],
-    os: ['Linux', 'MacOS', 'Windows'],
+    os: [
+      {
+        linux: 'linux',
+      },
+      {
+        windows: 'windows',
+      },
+      {
+        mac: 'apple',
+      },
+    ],
+    Learning: [
+      {
+        next: 'next-js',
+      },
+      {
+        typescript: 'typescript',
+      },
+      {
+        graphql: 'graphql',
+      },
+      {
+        docker: 'docker',
+      },
+      {
+        kubernetes: 'kubernetes',
+      },
+    ],
     workFlow: ['Agile', 'Scrum', 'Slack', 'Google Firebase'],
-    Learning: ['Next.js', 'TypeScript', 'GraphQL', 'Docker', 'Kubernetes'],
   },
 ];
 

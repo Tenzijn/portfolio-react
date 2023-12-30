@@ -7,6 +7,7 @@ export const aboutMe = [
   {
     firstName: 'Tenzin',
     lastName: 'Kunchok',
+    img: '/tenzinkunchok.webp',
     add: 'Amsterdam, Netherlands',
     email: 'tenzinkunchok@tibet.dev',
     phone: '+31 6 38947645',
@@ -20,7 +21,7 @@ export const aboutMe = [
       { Facebook: '' },
       { Youtube: '' },
     ],
-    about: `👋 I'm a self-taught full-stack developer 💻 driven by a relentless curiosity for technology 🕸️. I thrive on the dynamic nature of the tech world 🌏, constantly learning and adapting to stay at the forefront of innovation. Fluent in four languages 🏳️ 🇳🇱 🇬🇧 🇮🇳 , I believe effective communication is as crucial as writing impeccable code . My journey began in Tibet, where I developed a deep appreciation for cultural diversity, and now, I call Amsterdam home. 
+    about: `👋 I'm a self-taught full-stack developer 💻 driven by a relentless curiosity for technology 🕸️. I thrive on the dynamic nature of the tech world 🌏, constantly learning and adapting to stay at the forefront of innovation. Fluent in four languages 🏳️ (Tibetan) 🇳🇱 🇬🇧 🇮🇳 , I believe effective communication is as crucial as writing impeccable code . My journey began in Tibet, where I developed a deep appreciation for cultural diversity, and now, I call Amsterdam home. 
     Beyond coding, my passion extends to graphic design 🤔, photography 📸 , and videography 🎥. I find joy in crafting visual narratives that complement my technical skills. Exploring new programming languages is not just a professional endeavor but also a creative outlet. This unique blend of technical acumen and a multicultural background, coupled with a keen interest in the visual arts, allows me to approach challenges with a holistic and creative perspective.`,
   },
 ];

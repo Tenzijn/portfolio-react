@@ -9,7 +9,7 @@ const About = ({ aboutMe }) => {
       {aboutMe &&
         aboutMe.map((info, index) => (
           <Box key={index}>
-            <Heading as='h1' size='4xl'>
+            <Heading as='h1' fontSize={{ base: '2xl', lg: '4xl' }}>
               <Text as='span' className='accent-gray'>
                 {info.firstName.toUpperCase()} &nbsp;
               </Text>
@@ -17,13 +17,13 @@ const About = ({ aboutMe }) => {
                 {info.lastName.toUpperCase()}
               </Text>
             </Heading>
-            <Heading fontSize='xl' mt='2'>
+            <Heading fontSize={{ lg: 'xl' }} mt='2'>
               {info.add.toUpperCase()} {info.phone} - &nbsp;
               <Text as='span' className='accent-orange'>
                 {info.email.toUpperCase()}
               </Text>
             </Heading>
-            <Text mt='4' fontSize='lg'>
+            <Text mt='4' fontSize={'lg'}>
               {info.about}
             </Text>
             <HStack mt='8' spacing='5'>

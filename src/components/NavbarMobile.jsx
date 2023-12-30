@@ -8,6 +8,7 @@ import {
   AccordionPanel,
   AccordionButton,
   Hide,
+  Avatar,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import '../styles/Navbar.scss';
@@ -15,7 +16,7 @@ import ReactPropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
 const NavbarMobile = (props) => {
-  const { userName, navLinks } = props;
+  const { userName, navLinks, userImg } = props;
   return (
     <Hide above='lg'>
       <Accordion className='navbar' allowToggle>
@@ -26,9 +27,14 @@ const NavbarMobile = (props) => {
             width={'100%'}
             gap={2}
           >
-            <Text fontSize='xl' color='white' m={3}>
-              {userName}
-            </Text>
+            <Avatar
+              name={userName}
+              src={userImg}
+              size='md'
+              m={3}
+              border={'1px solid white'}
+              bg={'gray.100'}
+            />
             <Spacer />
             <AccordionButton w={20}>
               <AccordionIcon
@@ -64,6 +70,7 @@ const NavbarMobile = (props) => {
 NavbarMobile.propTypes = {
   userName: ReactPropTypes.string.isRequired,
   navLinks: ReactPropTypes.array.isRequired,
+  userImg: ReactPropTypes.string.isRequired,
 };
 
 export default NavbarMobile;

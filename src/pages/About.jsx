@@ -1,31 +1,29 @@
-import { Box, HStack, Heading, Text } from '@chakra-ui/react';
+import { Box, HStack } from '@chakra-ui/react';
 import '../styles/About.scss';
 import IconGenerator from '../components/IconGenerator';
 import propTypes from 'prop-types';
+import ContentLayout from '../components/ContentLayout';
+import PageHeading from '../components/PageHeading';
+import Subtitle from '../components/Subtitle';
 
-const About = ({ aboutMe }) => {
+const About = ({ data }) => {
   return (
     <>
-      {aboutMe &&
-        aboutMe.map((info, index) => (
+      {data &&
+        data.map((info, index) => (
           <Box key={index}>
-            <Heading as='h1' fontSize={{ base: '2xl', lg: '4xl' }}>
-              <Text as='span' className='accent-gray'>
-                {info.firstName.toUpperCase()} &nbsp;
-              </Text>
-              <Text as='span' className='accent-orange'>
-                {info.lastName.toUpperCase()}
-              </Text>
-            </Heading>
-            <Heading fontSize={{ lg: 'xl' }} mt='2'>
-              {info.add.toUpperCase()} {info.phone} &nbsp;
-              <Text as='span' className='accent-orange'>
-                {info.email.toUpperCase()}
-              </Text>
-            </Heading>
-            <Text mt='4' fontSize={'lg'}>
-              {info.about}
-            </Text>
+            {/* Displaying first-name and last-name */}
+            <PageHeading
+              firstHeading={info.firstName}
+              secondHeading={info.lastName}
+            />
+            {/* Displaying address,email */}
+            <Subtitle subtitle={`📍${info.add}`} />
+            <br />
+            <Subtitle subtitle={`📨${info.email}`} />
+            {/* Displaying about */}
+            <ContentLayout data={info.about} />
+            {/* Displaying Social links */}
             <HStack mt='8' spacing='5'>
               <IconGenerator key={index} icons={info.socials} />
             </HStack>
@@ -36,7 +34,7 @@ const About = ({ aboutMe }) => {
 };
 
 About.propTypes = {
-  aboutMe: propTypes.array,
+  data: propTypes.array,
 };
 
 export default About;

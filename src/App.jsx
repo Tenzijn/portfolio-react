@@ -51,45 +51,35 @@ function App() {
         />
       </GridItem>
       <Hide below='lg'>
-        <GridItem
-          colSpan={2}
-          h={'100dvh'}
-          className='sidebarNav'
-          maxWidth={'270px'}
-        >
+        <GridItem colSpan={2} className='sidebarNav' maxWidth={'270px'}>
           <SidebarNav navLinks={navLinks} profilePic={profilePic} />
         </GridItem>
       </Hide>
-      <GridItem colSpan={{ base: 12, lg: 10 }}>
+      <GridItem
+        colSpan={{ base: 12, lg: 10 }}
+        h={{ lg: '100dvh' }}
+        overflow={{ lg: 'auto' }}
+      >
+        {/* flex has problem : top overflow and can't see so made it grid */}
         <Flex
+          display={'grid'}
           alignItems='center'
+          maxW={{ lg: '1000px' }}
           mx={6}
           my={{ base: 6, lg: 0 }}
-          h={{ lg: '100svh' }}
+          h={'100%'}
         >
           {/*
-           * Navigation to all the pages
+           * Routing/Navigation to all the pages
            */}
           <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About aboutMe={aboutMe} />} />
-            <Route
-              path='/projects'
-              element={<Projects projects={projects} />}
-            />
-            <Route
-              path='/education'
-              element={<Education education={education} />}
-            />
-            <Route path='/interest' element={<Interest hobbies={hobbies} />} />
-            <Route
-              path='/journey'
-              element={<Journey myJourney={myJourney} />}
-            />
-            <Route
-              path='/skills'
-              element={<Skills experience={experience} />}
-            />
+            <Route path='/about' element={<About data={aboutMe} />} />
+            <Route path='/journey' element={<Journey data={myJourney} />} />
+            <Route path='/education' element={<Education data={education} />} />
+            <Route path='/skills' element={<Skills data={experience} />} />
+            <Route path='/interest' element={<Interest data={hobbies} />} />
+            <Route path='/projects' element={<Projects data={projects} />} />
             <Route path='*' element={<PageNotFound />} />
           </Routes>
         </Flex>

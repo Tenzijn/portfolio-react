@@ -5,6 +5,21 @@ import {
   FaLinkedin,
   FaTwitter,
   FaYoutube,
+  FaHtml5,
+  FaCss3,
+  FaSass,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaDatabase,
+  FaWordpress,
+  FaGit,
+  FaFigma,
+  FaBootstrap,
+  FaLinux,
+  FaWindows,
+  FaApple,
+  FaDocker,
 } from 'react-icons/fa';
 import { Icon, Wrap, WrapItem } from '@chakra-ui/react';
 import propTypes from 'prop-types';
@@ -24,8 +39,12 @@ const IconGenerator = ({ icons }) => {
               p={4}
               borderRadius={18}
               onClick={() => {
-                // to open the link in new tab with link
-                window.open(social[Object.keys(social)[0]]);
+                const url = social[Object.keys(social)[0]];
+                const urlPattern =
+                  /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/;
+                if (urlPattern.test(url)) {
+                  window.open(url);
+                }
               }}
               cursor={'pointer'}
               _hover={{
@@ -53,6 +72,36 @@ const getIconComponent = (iconName) => {
       return FaInstagram;
     case 'FaGithub':
       return FaGithub;
+    case 'FaHtml5':
+      return FaHtml5;
+    case 'FaCss3':
+      return FaCss3;
+    case 'FaSass':
+      return FaSass;
+    case 'FaJs':
+      return FaJs;
+    case 'FaReact':
+      return FaReact;
+    case 'FaNodeJs':
+      return FaNodeJs;
+    case 'FaDatabase':
+      return FaDatabase;
+    case 'FaWordpress':
+      return FaWordpress;
+    case 'FaGit':
+      return FaGit;
+    case 'FaFigma':
+      return FaFigma;
+    case 'FaBootstrap':
+      return FaBootstrap;
+    case 'FaLinux':
+      return FaLinux;
+    case 'FaWindows':
+      return FaWindows;
+    case 'FaApple':
+      return FaApple;
+    case 'FaDocker':
+      return FaDocker;
     default:
       return null;
   }

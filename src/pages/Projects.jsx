@@ -1,10 +1,26 @@
-const Projects = () => {
+import { Wrap, WrapItem } from '@chakra-ui/react';
+import propTypes from 'prop-types';
+import PageHeading from '../components/PageHeading';
+import CardComponent from '../components/CardComponent';
+
+const Projects = ({ data }) => {
   return (
-    <div>
-      <h1>Projects</h1>
-      <p>My name is Tenzin Kunchok and I am a full stack developer.</p>
-    </div>
+    <>
+      <PageHeading firstHeading='Projects' />
+      <Wrap>
+        {/* displaying page header */}
+        {data.map((project, index) => (
+          <WrapItem key={index}>
+            <CardComponent project={project} />
+          </WrapItem>
+        ))}
+      </Wrap>
+    </>
   );
+};
+
+Projects.propTypes = {
+  data: propTypes.array,
 };
 
 export default Projects;

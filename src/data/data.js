@@ -236,7 +236,7 @@ export const projects = [
     subtitle: 'Quiz App',
     image: '/quiz-app.png',
     programs: ['js-square', 'html5', 'css3-alt', 'vite'],
-    link: 'https://quiz-app-tenzijn.netlify.app/',
+    link: 'https://quiz.tibet.dev',
     github: '#',
   },
 ];
@@ -375,7 +375,7 @@ export const experience = [
     ],
   },
   {
-    workFlow: ['Agile', 'Scrum', 'Slack', 'Google Firebase'],
+    workFlow: ['Agile', 'Scrum', 'Slack'],
   },
 ];
 

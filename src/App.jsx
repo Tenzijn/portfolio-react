@@ -14,7 +14,6 @@ import Education from './pages/Education';
 import Interest from './pages/Interest';
 import Journey from './pages/Journey';
 import Skills from './pages/Skills';
-import Home from './pages/Home.jsx';
 import PageNotFound from './pages/PageNotFound';
 
 /* Images */

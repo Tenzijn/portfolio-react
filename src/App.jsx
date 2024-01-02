@@ -73,8 +73,7 @@ function App() {
            * Routing/Navigation to all the pages
            */}
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About data={aboutMe} />} />
+            <Route path='/' element={<About data={aboutMe} />} />
             <Route path='/journey' element={<Journey data={myJourney} />} />
             <Route path='/education' element={<Education data={education} />} />
             <Route path='/skills' element={<Skills data={experience} />} />

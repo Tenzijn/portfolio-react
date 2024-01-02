@@ -1,7 +1,6 @@
 import {
   Flex,
   Spacer,
-  Text,
   Accordion,
   AccordionIcon,
   AccordionItem,
@@ -58,15 +57,21 @@ const NavbarMobile = (props) => {
           </Flex>
           <AccordionPanel>
             <Flex flexDirection={'column'} gap={2}>
-              {navLinks.map((link) => (
-                <NavLink
-                  key={link}
-                  to={`/${link.toLowerCase()}`}
-                  className='nav-link'
-                >
-                  {link}
-                </NavLink>
-              ))}
+              {navLinks.map((link) =>
+                link === 'About' ? (
+                  <NavLink key={link} to={`/`} className='nav-link'>
+                    {link}
+                  </NavLink>
+                ) : (
+                  <NavLink
+                    key={link}
+                    to={`/${link.toLowerCase()}`}
+                    className='nav-link'
+                  >
+                    {link}
+                  </NavLink>
+                )
+              )}
             </Flex>
           </AccordionPanel>
         </AccordionItem>

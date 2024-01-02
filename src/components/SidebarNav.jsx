@@ -27,11 +27,21 @@ const SidebarNav = (props) => {
         />
       </NavLink>
 
-      {navLinks.map((link) => (
-        <NavLink key={link} to={`/${link.toLowerCase()}`} className='nav-link'>
-          {link}
-        </NavLink>
-      ))}
+      {navLinks.map((link) =>
+        link === 'About' ? (
+          <NavLink key={link} to={`/`} className='nav-link'>
+            {link}
+          </NavLink>
+        ) : (
+          <NavLink
+            key={link}
+            to={`/${link.toLowerCase()}`}
+            className='nav-link'
+          >
+            {link}
+          </NavLink>
+        )
+      )}
     </Flex>
   );
 };

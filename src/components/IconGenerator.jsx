@@ -20,7 +20,21 @@ import {
   FaWindows,
   FaApple,
   FaDocker,
+  FaGitAlt,
 } from 'react-icons/fa';
+import {
+  SiAdobe,
+  SiMaterialdesignicons,
+  SiVite,
+  SiWebpack,
+  SiChakraui,
+  SiNetlify,
+  SiTypescript,
+  SiGraphql,
+  SiKubernetes,
+} from 'react-icons/si';
+import { IoLogoFirebase } from 'react-icons/io5';
+import { TbBrandNextjs } from 'react-icons/tb';
 import { Icon, Wrap, WrapItem } from '@chakra-ui/react';
 import propTypes from 'prop-types';
 
@@ -28,7 +42,7 @@ const IconGenerator = ({ icons }) => {
   return (
     <Wrap spacing='20px'>
       {icons.map((social, index) => {
-        const iconName = `Fa${Object.keys(social)[0]}`;
+        const iconName = Object.keys(social)[0];
         const IconComponent = getIconComponent(iconName);
         return (
           <WrapItem key={index}>
@@ -102,6 +116,30 @@ const getIconComponent = (iconName) => {
       return FaApple;
     case 'FaDocker':
       return FaDocker;
+    case 'FaGitAlt':
+      return FaGitAlt;
+    case 'SiAdobe':
+      return SiAdobe;
+    case 'SiMaterialdesignicons':
+      return SiMaterialdesignicons;
+    case 'IoLogoFirebase':
+      return IoLogoFirebase;
+    case 'SiVite':
+      return SiVite;
+    case 'SiWebpack':
+      return SiWebpack;
+    case 'SiChakraui':
+      return SiChakraui;
+    case 'SiNetlify':
+      return SiNetlify;
+    case 'TbBrandNextjs':
+      return TbBrandNextjs;
+    case 'SiTypescript':
+      return SiTypescript;
+    case 'SiGraphql':
+      return SiGraphql;
+    case 'SiKubernetes':
+      return SiKubernetes;
     default:
       return null;
   }

@@ -14,13 +14,13 @@ export const aboutMe = [
     socials: [
       // all the keys should be same as FontAwesome icon name
       {
-        Linkedin: 'https://www.linkedin.com/in/tenzin-kunchok-669592240/',
+        FaLinkedin: 'https://www.linkedin.com/in/tenzin-kunchok-669592240/',
       },
-      { Github: 'https://github.com/Tenzijn' },
-      { Twitter: 'https://twitter.com/Tenzin7623' },
-      { Instagram: 'https://www.instagram.com/tenzijn/' },
-      { Facebook: 'https://www.facebook.com/profile.php?id=100080902160722' },
-      { Youtube: 'https://www.youtube.com/channel/UCSZ7cHHK8yiIX5uJP_qHeug' },
+      { FaGithub: 'https://github.com/Tenzijn' },
+      { FaTwitter: 'https://twitter.com/Tenzin7623' },
+      { FaInstagram: 'https://www.instagram.com/tenzijn/' },
+      { FaFacebook: 'https://www.facebook.com/profile.php?id=100080902160722' },
+      { FaYoutube: 'https://www.youtube.com/channel/UCSZ7cHHK8yiIX5uJP_qHeug' },
     ],
     about: `Hello! 👋 , I'm a self-taught full-stack developer 💻 driven by a relentless curiosity for technology 🕸️. I thrive on the dynamic nature of the tech world 🌏, constantly learning and adapting to stay at the forefront of innovation. Fluent in four languages 🏳️ (Tibetan) 🇳🇱 🇬🇧 🇮🇳 , I believe effective communication is as crucial as writing impeccable code . My journey began in Tibet, where I developed a deep appreciation for cultural diversity, and now, I call Amsterdam home. <br/>
     Beyond coding, my passion extends to graphic design 🤔, photography 📸 , and videography 🎥. I find joy in crafting visual narratives that complement my technical skills. Exploring new programming languages is not just a professional endeavor but also a creative outlet. This unique blend of technical acumen and a multicultural background, coupled with a keen interest in the visual arts, allows me to approach challenges with a holistic and creative perspective.`,
@@ -280,97 +280,97 @@ export const experience = [
   {
     languagesAndTools: [
       {
-        Html5: 'html5',
+        FaHtml5: 'html5',
       },
       {
-        Css3: 'css3-alt',
+        FaCss3: 'css3-alt',
       },
       {
-        Sass: 'sass',
+        FaSass: 'sass',
       },
       {
-        Js: 'js-square',
+        FaJs: 'js-square',
       },
       {
-        React: 'react',
+        FaReact: 'react',
       },
       {
-        NodeJs: 'node-js',
+        FaNodeJs: 'node-js',
       },
       {
-        Database: 'database',
+        FaDatabase: 'database',
       },
       {
-        Wordpress: 'wordpress',
+        FaWordpress: 'wordpress',
       },
     ],
   },
   {
     tools: [
       {
-        Github: 'github',
+        FaGithub: 'github',
       },
       {
-        Git: 'git',
+        FaGitAlt: 'git',
       },
       {
-        Figma: 'figma',
+        FaFigma: 'figma',
       },
       {
-        Adobe: 'adobe',
+        SiAdobe: 'adobe',
       },
       {
-        Bootstrap: 'bootstrap',
+        FaBootstrap: 'bootstrap',
       },
       {
-        Material: 'material-ui',
+        SiMaterialdesignicons: 'material-ui',
       },
       {
-        Firebase: 'firebase',
+        IoLogoFirebase: 'firebase',
       },
       {
-        Vite: 'vite',
+        SiVite: 'vite',
       },
       {
-        Webpack: 'webpack',
+        SiWebpack: 'webpack',
       },
       {
-        Chakra: 'chakra-ui',
+        SiChakraui: 'chakra-ui',
       },
       {
-        Netlify: 'netlify',
+        SiNetlify: 'netlify',
       },
     ],
   },
   {
     os: [
       {
-        Linux: 'linux',
+        FaLinux: 'linux',
       },
       {
-        Windows: 'windows',
+        FaWindows: 'windows',
       },
       {
-        Mac: 'apple',
+        FaApple: 'apple',
       },
     ],
   },
   {
     learning: [
       {
-        Next: 'next-js',
+        TbBrandNextjs: 'next-js',
       },
       {
-        Typescript: 'typescript',
+        SiTypescript: 'typescript',
       },
       {
-        Graphql: 'graphql',
+        SiGraphql: 'graphql',
       },
       {
-        Docker: 'docker',
+        FaDocker: 'docker',
       },
       {
-        Kubernetes: 'kubernetes',
+        SiKubernetes: 'kubernetes',
       },
     ],
   },

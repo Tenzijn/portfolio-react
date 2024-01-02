@@ -27,14 +27,22 @@ const NavbarMobile = (props) => {
             width={'100%'}
             gap={2}
           >
-            <Avatar
-              name={userName}
-              src={userImg}
-              size='md'
-              m={3}
-              border={'1px solid white'}
-              bg={'gray.100'}
-            />
+            <NavLink to='/'>
+              <Avatar
+                name={userName}
+                src={userImg}
+                size='md'
+                m={3}
+                border={'1px solid white'}
+                bg={'gray.100'}
+                onMouseEnter={(e) =>
+                  e.target.classList.add('flip-vertical-left')
+                }
+                onMouseLeave={(e) =>
+                  e.target.classList.remove('flip-vertical-left')
+                }
+              />
+            </NavLink>
             <Spacer />
             <AccordionButton w={20}>
               <AccordionIcon

@@ -64,7 +64,7 @@ function App() {
         <Flex
           display={'grid'}
           alignItems='center'
-          maxW={{ lg: '1000px' }}
+          maxW={{ lg: '1500px' }}
           mx={6}
           my={{ base: 6, lg: 0 }}
           h={'100%'}

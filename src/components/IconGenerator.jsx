@@ -32,6 +32,7 @@ import {
   SiTypescript,
   SiGraphql,
   SiKubernetes,
+  SiMysql,
 } from 'react-icons/si';
 import { IoLogoFirebase } from 'react-icons/io5';
 import { TbBrandNextjs } from 'react-icons/tb';
@@ -140,6 +141,8 @@ const getIconComponent = (iconName) => {
       return SiGraphql;
     case 'SiKubernetes':
       return SiKubernetes;
+    case 'SiMysql':
+      return SiMysql;
     default:
       return null;
   }

@@ -298,7 +298,7 @@ export const experience = [
         FaNodeJs: 'node-js',
       },
       {
-        FaDatabase: 'database',
+        SiMysql: 'SiMysql',
       },
       {
         FaWordpress: 'wordpress',

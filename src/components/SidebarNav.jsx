@@ -13,15 +13,19 @@ const SidebarNav = (props) => {
       alignItems='center'
       gap={3}
     >
-      <Image
-        src={profilePic}
-        borderRadius='full'
-        alt='profile pic'
-        boxSize='150px'
-        bg={'gray.100'}
-        border='5px solid'
-        mb={4}
-      />
+      <NavLink to='/'>
+        <Image
+          src={profilePic}
+          borderRadius='full'
+          alt='profile pic'
+          boxSize='150px'
+          bg={'gray.100'}
+          border='5px solid'
+          mb={4}
+          onMouseEnter={(e) => e.target.classList.add('flip-vertical-left')}
+          onMouseLeave={(e) => e.target.classList.remove('flip-vertical-left')}
+        />
+      </NavLink>
 
       {navLinks.map((link) => (
         <NavLink key={link} to={`/${link.toLowerCase()}`} className='nav-link'>

@@ -22,6 +22,11 @@ $quaternary-color: #343a40;
 
 html,
 #root {
+  --s: 100px; /* control the size */
+  --_g: #0000 90deg, rgba(132, 114, 11, 0.1) 0;
+  background: conic-gradient(from 90deg at 2px 2px, var(--_g)),
+    conic-gradient(from 90deg at 1px 1px, var(--_g));
+  background-size: var(--s) var(--s), calc(var(--s) / 5) calc(var(--s) / 5);
   background-color: $tertiary-color;
 }
 

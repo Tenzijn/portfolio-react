@@ -7,7 +7,7 @@ const Projects = ({ data }) => {
   return (
     <>
       <PageHeading firstHeading='Projects' />
-      <Wrap>
+      <Wrap h={'100%'}>
         {/* displaying page header */}
         {data.map((project, index) => (
           <WrapItem key={index}>

@@ -17,7 +17,7 @@ import Skills from './pages/Skills';
 import PageNotFound from './pages/PageNotFound';
 
 /* Images */
-import profilePic from '/tenzinkunchok.webp';
+import profilePic from '/tenzinkunchok.jpeg';
 
 /* Data */
 import {

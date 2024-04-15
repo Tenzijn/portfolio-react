@@ -1,14 +1,13 @@
 /* React Router */
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 /* Chakra UI */
-import { Flex, Grid, GridItem, Hide } from '@chakra-ui/react';
+import { Flex, Grid, GridItem, Hide, Box } from '@chakra-ui/react';
 /* Styles */
 import './styles/App.scss';
 /* Components */
 import NavbarMobile from './components/NavbarMobile';
 import SidebarNav from './components/SidebarNav';
-import DownloadCv from './components/DownloadCv.jsx';
 /* Pages */
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -16,7 +15,7 @@ import Education from './pages/Education';
 import Interest from './pages/Interest';
 import Journey from './pages/Journey';
 import Skills from './pages/Skills';
-import Cv from './pages/cv.jsx';
+import Cv from './pages/Cv.jsx';
 import PageNotFound from './pages/PageNotFound';
 
 /* Images */
@@ -54,7 +53,9 @@ function App() {
       </GridItem>
       <Hide below='lg'>
         <GridItem colSpan={2} className='sidebarNav' maxWidth={'270px'}>
-          <DownloadCv />
+          <Box>
+            <Link to='/cv'>CV</Link>
+          </Box>
           <SidebarNav navLinks={navLinks} profilePic={profilePic} />
         </GridItem>
       </Hide>

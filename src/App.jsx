@@ -2,7 +2,7 @@
 import { Routes, Route, Link } from 'react-router-dom';
 
 /* Chakra UI */
-import { Flex, Grid, GridItem, Hide, Box } from '@chakra-ui/react';
+import { Flex, Grid, GridItem, Hide, Box, Text } from '@chakra-ui/react';
 /* Styles */
 import './styles/App.scss';
 /* Components */
@@ -15,7 +15,7 @@ import Education from './pages/Education';
 import Interest from './pages/Interest';
 import Journey from './pages/Journey';
 import Skills from './pages/Skills';
-import Cv from './pages/Cv.jsx';
+import Cv from './pages/cv.jsx';
 import PageNotFound from './pages/PageNotFound';
 
 /* Images */
@@ -43,7 +43,7 @@ const navLinks = [
 
 function App() {
   return (
-    <Grid templateColumns={'repeat(12,1fr)'}>
+    <Grid templateColumns={'repeat(12,1fr)'} overflow={'hidden'}>
       <GridItem colSpan={12}>
         <NavbarMobile
           userName='Tenzin Kunchok'
@@ -53,9 +53,24 @@ function App() {
       </GridItem>
       <Hide below='lg'>
         <GridItem colSpan={2} className='sidebarNav' maxWidth={'270px'}>
-          <Box>
-            <Link to='/cv'>CV</Link>
-          </Box>
+          <Link to='/cv'>
+            <Box
+              bgColor={'orange.600'}
+              position={'absolute'}
+              p={'2rem'}
+              bottom={'3rem'}
+              right={'3rem'}
+              _hover={{
+                transform: 'translateY(-10px)',
+                transition: 'transform 0.5s ease-in-out',
+              }}
+              cursor={'pointer'}
+            >
+              <Text color={'white'} fontSize={'2xl'} fontWeight={'bold'}>
+                CV
+              </Text>
+            </Box>
+          </Link>
           <SidebarNav navLinks={navLinks} profilePic={profilePic} />
         </GridItem>
       </Hide>

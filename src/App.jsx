@@ -16,7 +16,7 @@ import Education from './pages/Education';
 import Interest from './pages/Interest';
 import Journey from './pages/Journey';
 import Skills from './pages/Skills';
-import Cv from './pages/cv.jsx';
+import Cv from './pages/Cv';
 import PageNotFound from './pages/PageNotFound';
 
 /* Images */

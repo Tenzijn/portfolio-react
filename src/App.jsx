@@ -1,5 +1,6 @@
 /* React Router */
 import { Routes, Route } from 'react-router-dom';
+
 /* Chakra UI */
 import { Flex, Grid, GridItem, Hide } from '@chakra-ui/react';
 /* Styles */
@@ -7,6 +8,7 @@ import './styles/App.scss';
 /* Components */
 import NavbarMobile from './components/NavbarMobile';
 import SidebarNav from './components/SidebarNav';
+import FloatingBtn from './components/FloatingBtn.jsx';
 /* Pages */
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -14,6 +16,7 @@ import Education from './pages/Education';
 import Interest from './pages/Interest';
 import Journey from './pages/Journey';
 import Skills from './pages/Skills';
+import Cv from './pages/cv.jsx';
 import PageNotFound from './pages/PageNotFound';
 
 /* Images */
@@ -41,7 +44,7 @@ const navLinks = [
 
 function App() {
   return (
-    <Grid templateColumns={'repeat(12,1fr)'}>
+    <Grid templateColumns={'repeat(12,1fr)'} overflow={'hidden'}>
       <GridItem colSpan={12}>
         <NavbarMobile
           userName='Tenzin Kunchok'
@@ -51,6 +54,7 @@ function App() {
       </GridItem>
       <Hide below='lg'>
         <GridItem colSpan={2} className='sidebarNav' maxWidth={'270px'}>
+          <FloatingBtn />
           <SidebarNav navLinks={navLinks} profilePic={profilePic} />
         </GridItem>
       </Hide>
@@ -78,6 +82,7 @@ function App() {
             <Route path='/skills' element={<Skills data={experience} />} />
             <Route path='/interest' element={<Interest data={hobbies} />} />
             <Route path='/projects' element={<Projects data={projects} />} />
+            <Route path='/cv' element={<Cv />} />
             <Route path='*' element={<PageNotFound />} />
           </Routes>
         </Flex>

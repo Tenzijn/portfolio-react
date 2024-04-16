@@ -1,6 +1,6 @@
 import PdfViewer from '../components/PdfViewer';
 
-function Cv() {
+function CvPage() {
   return (
     <>
       <PdfViewer pdfSrc='/TenzinKunchokCV.pdf' />
@@ -8,4 +8,4 @@ function Cv() {
   );
 }
 
-export default Cv;
+export default CvPage;

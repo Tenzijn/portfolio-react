@@ -2,7 +2,7 @@
 import { Routes, Route } from 'react-router-dom';
 
 /* Chakra UI */
-import { Flex, Grid, GridItem, Hide } from '@chakra-ui/react';
+import { Box, Flex, Grid, GridItem, Hide } from '@chakra-ui/react';
 /* Styles */
 import './styles/App.scss';
 /* Components */
@@ -16,7 +16,7 @@ import Education from './pages/Education';
 import Interest from './pages/Interest';
 import Journey from './pages/Journey';
 import Skills from './pages/Skills';
-import Cv from './pages/Cv';
+import CvPage from './pages/CvPage.jsx';
 import PageNotFound from './pages/PageNotFound';
 
 /* Images */
@@ -82,7 +82,7 @@ function App() {
             <Route path='/skills' element={<Skills data={experience} />} />
             <Route path='/interest' element={<Interest data={hobbies} />} />
             <Route path='/projects' element={<Projects data={projects} />} />
-            <Route path='/cv' element={<Cv />} />
+            <Route path='/cv' element={<CvPage />} />
             <Route path='*' element={<PageNotFound />} />
           </Routes>
         </Flex>

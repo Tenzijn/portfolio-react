@@ -1,6 +1,3 @@
-import { SiTailwindcss } from 'react-icons/si';
-import { TbBrandTailwind } from 'react-icons/tb';
-
 /***********************************************
  * About me Data
  * Add your own data to End of the array

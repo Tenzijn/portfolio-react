@@ -1,4 +1,4 @@
-import { Box, Flex, List, ListIcon, ListItem, Text } from '@chakra-ui/react';
+import { Box, Flex, List, ListIcon, ListItem } from '@chakra-ui/react';
 import { MdCheckCircle } from 'react-icons/md';
 import PageHeading from '../components/PageHeading';
 import Title from '../components/Title';

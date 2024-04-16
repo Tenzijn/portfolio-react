@@ -1,3 +1,6 @@
+import { SiTailwindcss } from 'react-icons/si';
+import { TbBrandTailwind } from 'react-icons/tb';
+
 /***********************************************
  * About me Data
  * Add your own data to End of the array
@@ -303,6 +306,12 @@ export const experience = [
       {
         FaWordpress: 'wordpress',
       },
+      {
+        SiTypescript: 'typescript',
+      },
+      {
+        SiMongodb: 'mongodb',
+      },
     ],
   },
   {
@@ -361,9 +370,6 @@ export const experience = [
         TbBrandNextjs: 'next-js',
       },
       {
-        SiTypescript: 'typescript',
-      },
-      {
         SiGraphql: 'graphql',
       },
       {
@@ -371,6 +377,9 @@ export const experience = [
       },
       {
         SiKubernetes: 'kubernetes',
+      },
+      {
+        SiTailwindcss: 'tailwindcss',
       },
     ],
   },

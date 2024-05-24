@@ -3,7 +3,7 @@ import PdfViewer from '../components/PdfViewer';
 function CvPage() {
   return (
     <>
-      <PdfViewer pdfSrc='/TenzinKunchokCV.pdf' />
+      <PdfViewer pdfSrc='/TenzinKunchokResume.pdf' />
     </>
   );
 }

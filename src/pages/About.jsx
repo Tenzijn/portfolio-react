@@ -15,11 +15,10 @@ const About = ({ data }) => {
     (async () => {
       await client
         .fetch(
-          `*[_type == "about"]{firstName,lastName,location,email,bio,social}`
+          `*[_type == "about"]{firstName,lastName,location->{location},email,bio,social}`
         )
         .then((res) => {
           setSanityData(res);
-          console.log('res', res);
         })
         .catch(console.error);
     })();
@@ -36,7 +35,9 @@ const About = ({ data }) => {
               secondHeading={sanityData && sanityData[0].lastName}
             />
             {/* Displaying address,email */}
-            <Subtitle subtitle={`📍${sanityData && sanityData[0].location}`} />
+            <Subtitle
+              subtitle={`📍${sanityData && sanityData[0].location.location}`}
+            />
             <br />
             <Subtitle subtitle={`📨${sanityData && sanityData[0].email}`} />
             {/* Displaying about */}

@@ -8,10 +8,12 @@ const SidebarNav = (props) => {
   return (
     <>
       <Flex
+        display={'flex'}
         flexDirection={'column'}
         justifyContent={'center'}
         h={'100%'}
         alignItems='center'
+        pt={6}
         gap={3}
       >
         <NavLink to='/'>
@@ -45,7 +47,8 @@ const SidebarNav = (props) => {
             </NavLink>
           )
         )}
-        <Box position={'absolute'} bottom={'0'} bgColor={'gray.800'} p={'1rem'}>
+        {/* This box should be end of the page all the time */}
+        <Box bgColor={'gray.800'} p={'1rem'} mt={'auto'}>
           <Text fontSize='sm' color='gray.200' textAlign='center'>
             © 2024 Tibet.Dev | བོད་ཀྱི་དྲྭ་མཉེན་བཟོ་སྐྲུན་ཁང་། | All Rights
             Reserved

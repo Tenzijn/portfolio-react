@@ -1,4 +1,4 @@
-# Profile (React)
+# Profile (React) [side project]
 
 This is a profile page built with React. It is a single page application that uses React Router to navigate between pages. It is a responsive page that uses Chakra Ui for styling.
 

@@ -12,7 +12,6 @@ import Education from './pages/Education';
 import Interest from './pages/Interest';
 import Journey from './pages/Journey';
 import Skills from './pages/Skills';
-import CvPage from './pages/CvPage.jsx';
 import PageNotFound from './pages/PageNotFound';
 import Admin from './pages/Admin.jsx';
 import Public from './routers/Public.jsx';
@@ -39,7 +38,6 @@ function App() {
         <Route path='/skills' element={<Skills data={experience} />} />
         <Route path='/interest' element={<Interest data={hobbies} />} />
         <Route path='/projects' element={<Projects data={projects} />} />
-        <Route path='/cv' element={<CvPage />} />
       </Route>
       <Route element={<ProtectedRoutes />}>
         <Route path='/admin' element={<Admin />} />

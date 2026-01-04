@@ -51,7 +51,7 @@ export const myJourney = [
     id: 6,
     title: 'Started Coding Bootcamp',
     subtitle: 'Hack Your Future',
-    date: 'Oct 2023 - Present',
+    date: 'Oct 2023 - July 2024',
     content: `Amidst my linguistic and community endeavors, an exciting
 	  opportunity beckoned—a chance to elevate my coding skills to new
 	  heights. The call of the coding realm led me to apply for the
@@ -106,7 +106,7 @@ export const myJourney = [
     id: 4,
     title: 'Dutch School',
     subtitle: 'HvA - Hogeschool van Amsterdam',
-    date: 'Nov 2022 - Present',
+    date: 'Nov 2022 - Aug 2024',
     content: `Arriving in the Netherlands on the vibrant King's Day 🥳 of
 	  April 27, 2022, marked the beginning of a new chapter in my
 	  life. Eager to immerse myself in the rich Dutch culture, I
@@ -324,6 +324,12 @@ export const experience = [
       {
         SiMongodb: 'mongodb',
       },
+      {
+        TbBrandNextjs: 'next-js',
+      },
+      {
+        SiTailwindcss: 'tailwindcss',
+      },
     ],
   },
   {
@@ -379,9 +385,6 @@ export const experience = [
   {
     learning: [
       {
-        TbBrandNextjs: 'next-js',
-      },
-      {
         SiGraphql: 'graphql',
       },
       {
@@ -391,7 +394,10 @@ export const experience = [
         SiKubernetes: 'kubernetes',
       },
       {
-        SiTailwindcss: 'tailwindcss',
+        TbBrandCSharp: 'c-sharp',
+      },
+      {
+        SiDotnet: 'dotnet',
       },
     ],
   },

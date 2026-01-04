@@ -35,9 +35,11 @@ import {
   SiMysql,
   SiTailwindcss,
   SiMongodb,
+  SiDotnet,
 } from 'react-icons/si';
 import { IoLogoFirebase } from 'react-icons/io5';
 import { TbBrandNextjs } from 'react-icons/tb';
+import { TbBrandCSharp } from 'react-icons/tb';
 import { Icon, Wrap, WrapItem } from '@chakra-ui/react';
 import propTypes from 'prop-types';
 
@@ -149,6 +151,10 @@ const getIconComponent = (iconName) => {
       return SiTailwindcss;
     case 'SiMongodb':
       return SiMongodb;
+    case 'TbBrandCSharp':
+      return TbBrandCSharp;
+    case 'SiDotnet':
+      return SiDotnet;
     default:
       return null;
   }

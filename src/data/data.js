@@ -22,6 +22,32 @@ export const aboutMe = [
  *************************************************/
 export const myJourney = [
   {
+    id: 8,
+    title: 'Junior Full-stack Engineer at Homerun.co',
+    subtitle: 'Homerun.co - Amsterdam',
+    date: 'Mar 2025 - Present',
+    content: `Building upon the foundation laid during my internship, I have transitioned into the role of Junior Full-stack Engineer at Homerun.co. This new chapter marks a significant milestone in my professional journey, allowing me to further immerse myself in the dynamic world of tech.
+              <br />
+              As a Junior Full-stack Engineer, I am entrusted with greater responsibilities and opportunities to contribute meaningfully to projects that drive innovation. The experience gained during my internship has been invaluable, equipping me with the skills and confidence needed to excel in this role.
+              <br />
+              At Homerun.co, I continue to thrive in a collaborative environment where learning is a constant. The mentorship and support from seasoned professionals empower me to push my boundaries and explore new technologies. Each day presents fresh challenges and opportunities for growth, allowing me to refine my technical expertise and problem-solving abilities.
+              <br />
+              This transition is not just a career advancement; it is a testament to my dedication, hard work, and passion for technology. As I navigate this exciting phase of my journey, I am committed to making a positive impact, both within the company and in the broader tech community.`,
+  },
+  {
+    id: 7,
+    title: 'Internship at Homerun.co',
+    subtitle: 'Homerun.co - Amsterdam',
+    date: 'Sept 2024 - Mar 2025',
+    content: `Stepping into the dynamic world of tech, I embarked on an exciting internship journey at Homerun.co in Amsterdam. As a Junior Full-stack Engineer, I found myself immersed in a vibrant ecosystem where innovation meets collaboration.
+              <br />
+              At Homerun.co, every day is a new opportunity to learn and grow. Surrounded by a team of passionate professionals, I am honing my skills in both front-end and back-end development, contributing to projects that make a real impact. The hands-on experience is invaluable, allowing me to apply theoretical knowledge to practical challenges.
+              <br />
+              What sets this internship apart is the culture of continuous learning and support. The mentorship and guidance I receive empower me to push my boundaries and explore new technologies. From coding sprints to brainstorming sessions, every moment is a chance to contribute and make a difference.
+              <br />
+              As I navigate through this internship, I am not just gaining technical expertise; I am also developing a deeper understanding of teamwork, communication, and problem-solving in a professional setting. This experience is shaping me into a well-rounded developer ready to take on the challenges of the tech industry.`,
+  },
+  {
     id: 6,
     title: 'Started Coding Bootcamp',
     subtitle: 'Hack Your Future',

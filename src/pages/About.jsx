@@ -34,6 +34,8 @@ const About = ({ data }) => {
               firstHeading={sanityData && sanityData[0].firstName}
               secondHeading={sanityData && sanityData[0].lastName}
             />
+            <Subtitle subtitle={`👨‍💻 Junior Full-stack Engineer @ Homerun.co`} />
+            <br />
             {/* Displaying address,email */}
             <Subtitle
               subtitle={`📍${sanityData && sanityData[0].location.location}`}
@@ -44,7 +46,7 @@ const About = ({ data }) => {
             <ContentLayout
               data={sanityData && sanityData[0].bio[0].children[0].text}
             />
-            {/* Displaying Social links */}
+            {/* Displaying Social links  : coming from local data*/}
             <HStack mt='8' spacing='5'>
               <IconGenerator key={index} icons={info.socials} />
             </HStack>

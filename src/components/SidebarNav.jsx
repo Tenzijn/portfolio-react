@@ -50,7 +50,7 @@ const SidebarNav = (props) => {
         {/* This box should be end of the page all the time */}
         <Box bgColor={'gray.800'} p={'1rem'} mt={'auto'}>
           <Text fontSize='sm' color='gray.200' textAlign='center'>
-            © 2024 Tibet.Dev | བོད་ཀྱི་དྲྭ་མཉེན་བཟོ་སྐྲུན་ཁང་། | All Rights
+            © 2026 Tibet.Dev | བོད་ཀྱི་དྲྭ་མཉེན་བཟོ་སྐྲུན་ཁང་། | All Rights
             Reserved
           </Text>
         </Box>

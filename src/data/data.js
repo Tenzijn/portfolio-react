@@ -264,14 +264,14 @@ export const projects = [
 export const education = [
   {
     id: 3,
-    date: '2023 - Present',
+    date: '2023 - 2024',
     schoolName: 'Hack Your Future',
     course: 'Full Stack Web Development',
     content: ' ',
   },
   {
     id: 2,
-    date: '2022 - Present',
+    date: '2022 - 2024',
     schoolName: 'Hogeschool van Amsterdam',
     course: 'Dutch Language',
     content: ' ',
